@@ -13,7 +13,7 @@ $ cd praktikumASD
 $ git init
 $ git remote add origin https://github.com/anggerbinuko/pnm-praktikumASD.git
 $ git fetch
-$ git pull origin master
+$ git pull origin main
 ```
 
 License

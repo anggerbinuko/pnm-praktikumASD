@@ -2,7 +2,7 @@
 # Press the green button in the gutter to run the script.
 
 def welcome():
-    print("Welcome to Praktikum ASD kelas 1D")
+    print("=====Welcome to Praktikum ASD kelas 1D=====")
     return
 
 if __name__ == '__main__':

@@ -24,9 +24,12 @@ def introduction3(name,age,gender):
     return
 
 if __name__ == '__main__':
-    print("hanya jalan ketika langsunng dijalankan")
+    # dipanggil ketika file ini langsunng dijalankan
     introduction('Angger', 31, "pria")
     introduction2()
+    introduction3()
 else:
-    print("import modul introduction success")
+    # dipanggil ketika file ini diimport
+    print("=====PRAKTIKUM 1: Introduction (variable, data type & function)======")
+    introduction2()
 

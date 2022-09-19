@@ -1,31 +1,31 @@
 # Fungsi hitung-hitungan: penjumlahan
 def penjumlahan():
-    angka1 = int(input("Masukkan Angka 1 : "))
-    angka2 = int(input("Masukkan Angka 2 : "))
+    angka1 = int(input("Masukkan angka ke-1 : "))
+    angka2 = int(input("Masukkan angka ke-2 : "))
     hasil = angka1 + angka2
 
     print(f'Hasil dari {angka1} + {angka2} = {hasil}')
 
 # Fungsi hitung-hitungan: pengurangan
 def pengurangan():
-    angka1 = int(input("Masukkan Angka 1 : "))
-    angka2 = int(input("Masukkan Angka 2 : "))
+    angka1 = int(input("Masukkan angka ke-1 : "))
+    angka2 = int(input("Masukkan angka ke-2 : "))
     hasil = angka1 - angka2
 
     print(f'Hasil dari {angka1} - {angka2} = {hasil}')
 
 # Fungsi hitung-hitungan: perkalian
 def perkalian():
-    angka1 = int(input("Masukkan Angka 1 : "))
-    angka2 = int(input("Masukkan Angka 2 : "))
+    angka1 = int(input("Masukkan angka ke-1 : "))
+    angka2 = int(input("Masukkan angka ke-2 : "))
     hasil = angka1 * angka2
 
     print(f'Hasil dari {angka1} * {angka2} = {hasil}')
 
 # Fungsi hitung-hitungan: perkalian
 def pembagian():
-    angka1 = int(input("Masukkan Angka 1 : "))
-    angka2 = int(input("Masukkan Angka 2 : "))
+    angka1 = int(input("Masukkan angka ke-1 : "))
+    angka2 = int(input("Masukkan angka ke-2 : "))
     hasil = angka1 / angka2
 
     print(f'Hasil dari {angka1} / {angka2} = {hasil}')
@@ -43,4 +43,9 @@ def simple_calculator():
     else:
         pembagian()
 
-simple_calculator()
+if __name__ == '__main__':
+    # dipanggil ketika file ini langsunng dijalankan
+    simple_calculator()
+else:
+    # dipanggil ketika file ini diimport
+    print("=====PRAKTIKUM 2: Calculator (operators & expressions)======")
