@@ -11,7 +11,7 @@ def introduction2():
     gender = str(input("Masukkan Jenis Kelamin : "))
 
     # print("Hello", name)
-    print(f'Hello {name}, Anda seorang {gender} dan berusia {age}')
+    print(f'Hello {name}, Anda seorang {gender} dan berusia {age} tahun')
     return
 
 # Fungsi introduction fix variabel with control flow
@@ -25,9 +25,10 @@ def introduction3(name,age,gender):
 
 if __name__ == '__main__':
     # dipanggil ketika file ini langsunng dijalankan
-    introduction('Angger', 31, "pria")
+    print("=====PRAKTIKUM 1: Introduction (variable, data type & function)======")
+    # introduction('Angger', 31, "pria")
     introduction2()
-    introduction3()
+    # introduction3()
 else:
     # dipanggil ketika file ini diimport
     print("=====PRAKTIKUM 1: Introduction (variable, data type & function)======")

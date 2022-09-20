@@ -1,8 +1,4 @@
-def welcome_bmi():
-    print("======WELCOME TO BODY MASS INDEX CALCULATOR======")
-
 def calculator_bmi():
-    welcome_bmi()
     tinggi = int(input("Masukkan tinggi badan:"))
     berat = int(input("Masukkan berat badan:"))
     bmi = berat / (tinggi/100) ** 2
@@ -22,4 +18,9 @@ def conditional_bmi():
         print("BMI Anda obesitas")
     return
 
-conditional_bmi()
+if __name__ == '__main__':
+    # dipanggil ketika file ini langsunng dijalankan
+    calculator_bmi()
+else:
+    # dipanggil ketika file ini diimport
+    print("=====PRAKTIKUM 3: BODY MASS INDEX CALCULATOR (operators & expressions)======")
