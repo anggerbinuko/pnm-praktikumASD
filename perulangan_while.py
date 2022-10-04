@@ -3,7 +3,7 @@ def while_dasar():
     while count < 10:
         # print(f'angka ke-{count}')
         print(count, end=' ')
-        count += 1
+        count += 2
 
 def while_pangkat():
     count = 1
@@ -13,12 +13,10 @@ def while_pangkat():
 
 def while_ganjil_genap():
     mode = input("masukan mode (1=Ganjil/2=Genap)= ")
-
     # TRAPING
     if not (mode == "1" or mode == "2"):
         print("mode tidak ditemukan")
         exit()
-
     # LOGIC
     start = int(input("masukan range awal = "))
     end = int(input("masukan range akhir = "))
@@ -27,7 +25,6 @@ def while_ganjil_genap():
             if start%2 == 1: print(start, end=" ")
         elif mode == "2":
             if start%2 == 0: print(start, end=" ")
-
         start += 1
 
 def while_fibonaci():
@@ -55,7 +52,7 @@ if __name__ == '__main__':
     # dipanggil ketika file ini langsunng dijalankan
     # while_pangkat()
     # while_ganjil_genap()
-    while_fibonaci()
+    while_ganjil_genap()
 else:
     # dipanggil ketika file ini diimport
     print("=====PRAKTIKUM 4: Perulangan (while, for & nested loop)======")
