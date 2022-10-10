@@ -7,7 +7,7 @@ def belanja():
 
     print(f'Daftar jenis barang belanjaan Toko Kelontong PNM:\n1.{barang1}\n2.{barang2}\n3.{barang3}\n4.{barang4}')
     print(f'========================================================')
-    jenis = int(input("Masukkan jenis barang yang ingin dibeli: "))
+    jenis = int(input("Masukkan jenis barang yang ingin dibeli:"))
     if jenis == 1:
         nama_barang = barang1
         satuan = "kg"
@@ -27,7 +27,7 @@ def belanja():
     else:
         print("Jenis barang tidak tersedia")
 
-    jumlah = int(input(f'Masukkan jumlah {satuan} {nama_barang} yang dibeli: '))
+    jumlah = int(input(f'Masukkan jumlah {satuan} {nama_barang} yang dibeli:'))
     total_bayar = harga_satuan * jumlah
     total_diskon = (total_bayar*diskonan(jenis,jumlah))
     total_bayar_diskon = total_bayar - total_diskon
@@ -69,18 +69,13 @@ def diskonan(jenis,jumlah):
     return diskon
 
 def borongan():
-    total_bayar_diskon = 0
-    print(f'=============== WELCOME TO KELONTONG PNM ===============')
-    jmljenis = int(input("Masukkan jumlah item barang yang ingin dibeli: "))
-    index = 0
-    while (index < jmljenis):
-        # add list from call function here
-        total_bayar_diskon += belanja()
-        # add count +1
-        index += 1
-    # return keranjang
-    print(f'Total bayar keseluruhan belanja adalah {currencyIdr(total_bayar_diskon)}')
+    jmlBrg = int(input("Masukan jumlah barang yang akan dibeli:"))
+    totByr = 0
+    for i in range(0,jmlBrg):
+        # call function belanja dan dijumlahkan nilai return
+        totByr += belanja()
+    print(f"Total belanjaan = {currencyIdr(totByr)}")
 
 # Panggil fungsi
-# belanja()
+#belanja()
 borongan()
